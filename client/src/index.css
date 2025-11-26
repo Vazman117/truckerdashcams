@@ -98,6 +98,8 @@
   .border-sidebar-border { border-color: var(--sidebar-border); }
   .border-sidebar-primary-border { border-color: var(--sidebar-primary-border); }
   .border-sidebar-accent-border { border-color: var(--sidebar-accent-border); }
+    .bg-background { background-color: hsl(var(--background)); }
+  .text-foreground { color: hsl(var(--foreground)); }
 
   /* Mantén tus otras utilidades existentes */
   input[type="search"]::-webkit-search-cancel-button { @apply hidden; }
