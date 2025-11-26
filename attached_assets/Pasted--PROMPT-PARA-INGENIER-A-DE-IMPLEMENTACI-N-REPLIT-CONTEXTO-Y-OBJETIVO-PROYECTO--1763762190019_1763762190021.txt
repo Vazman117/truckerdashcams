@@ -1,0 +1,208 @@
+# **PROMPT PARA INGENIERÍA DE IMPLEMENTACIÓN - REPLIT**
+
+## **🎯 CONTEXTO Y OBJETIVO**
+```
+PROYECTO: Reconstrucción SEO - TruckerDashcams.com
+OBJETIVO: Implementar redirecciones 301 masivas para recuperación de backlinks
+URGENCIA: Alta - Dominios de autoridad 90+ en riesgo de perder links
+TECNOLOGÍA: Apache .htaccess + WordPress
+```
+
+## **🤖 PROMPT PRINCIPAL PARA REPLIT/AI**
+
+```markdown
+# **INSTRUCCIONES DE IMPLEMENTACIÓN - REDIRECCIONES 301 MASIVAS**
+
+## **CONTEXTO DEL PROYECTO**
+Estoy reconstruyendo la estrategia SEO de truckerdashcams.com. Necesito implementar redirecciones 301 permanentes para URLs antiguas que tienen backlinks de alta autoridad (DA 90+). El objetivo es preservar el link equity y redirigir tráfico a contenido relevante.
+
+## **DATOS DE ENTRADA - URLs PARA REDIRIGIR**
+```
+URLS_ORIGEN = [
+    "/cakesuki/2016/03/post-1582.html",
+    "/top/2008/04/post_4ce2.html", 
+    "/cakesuki/2016/02/f-51c2.html",
+    "/topic/984194-camping-gear/",
+    "/topic/934517-kptv-news/",
+    "/topic/1084317-vida-content/",
+    "/index.php?option=com_booklibrary&task=view&id=222"
+]
+
+URLS_DESTINO = [
+    "/truck-storage-solutions/",
+    "/truck-maintenance-guides/",
+    "/spanish-trucking-resources/", 
+    "/best-truck-storage-solutions/",
+    "/trucking-news-updates/",
+    "/recursos-en-espanol/",
+    "/trucker-education-resources/"
+]
+```
+
+## **REQUERIMIENTOS TÉCNICOS**
+1. **Tecnología**: Apache .htaccess con mod_rewrite
+2. **Código de estado**: 301 Moved Permanently  
+3. **Formato**: Sintaxis correcta para Apache
+4. **Backup**: Crear backup automático del .htaccess actual
+5. **Validación**: Verificar sintaxis antes de implementar
+
+## **TAREAS ESPECÍFICAS**
+1. Generar código .htaccess con todas las redirecciones
+2. Crear script de verificación de redirecciones
+3. Implementar sistema de backup/rollback
+4. Generar documentación de cambios
+5. Crear monitor de implementación
+
+## **CRITERIOS DE ÉXITO**
+- [ ] Todas las redirecciones devuelven 301
+- [ ] No hay errores de sintaxis en .htaccess
+- [ ] URLs destino existen y son accesibles
+- [ ] Sistema de rollback funcionando
+- [ ] Documentación completa generada
+
+## **RESTRICCIONES**
+- No usar RedirectMatch para URLs específicas
+- Mantener compatibilidad con WordPress
+- No afectar redirecciones existentes
+- Preservar parámetros query string cuando sea necesario
+```
+
+## **🔧 PROMPT ESPECÍFICO PARA GENERACIÓN DE CÓDIGO**
+
+```markdown
+# **GENERADOR DE CÓDIGO .HTACCESS - REDIRECCIONES 301**
+
+**ACTÚA COMO**: Ingeniero DevOps Senior especializado en Apache
+
+**ENTRADA**: Lista de pares URL_origen → URL_destino
+
+**SALIDA ESPERADA**:
+1. Código .htaccess optimizado
+2. Script bash de verificación
+3. Sistema de backup/restauración
+4. Documentación técnica
+
+**REQUISITOS TÉCNICOS**:
+```apache
+# ESTRUCTURA REQUERIDA:
+# - Comentarios descriptivos por cada redirección
+# - Ordenamiento por prioridad/antigüedad  
+# - Compatibilidad con WordPress
+# - Manejo de query strings
+# - Optimización performance
+```
+
+**EJEMPLO DE FORMATO SALIDA**:
+```apache
+# REDIRECCIONES PRIORIDAD 1 - BLOGS JAPONESES (DA 90+)
+Redirect 301 /cakesuki/2016/03/post-1582.html /truck-storage-solutions/
+
+# REDIRECCIONES PRIORIDAD 2 - FOROS POLACOS (DA 93+)
+Redirect 301 /topic/984194-camping-gear/ /best-truck-storage-solutions/
+```
+
+**VALIDACIONES INCLUIR**:
+- [ ] Sintaxis Apache válida
+- [ ] URLs destino existen
+- [ ] No hay conflictos con reglas existentes
+- [ ] Backup creado pre-implementación
+```
+
+## **📊 PROMPT PARA MONITOREO Y VERIFICACIÓN**
+
+```markdown
+# **SISTEMA DE MONITOREO - IMPLEMENTACIÓN REDIRECCIONES**
+
+**OBJETIVO**: Verificar correcta implementación de 301 redirects
+
+**FUNCIONALIDADES REQUERIDAS**:
+1. Verificación en tiempo real de códigos de estado
+2. Detección de redirecciones rotas
+3. Monitoreo de performance
+4. Alertas de errores
+5. Reportes automáticos
+
+**COMANDOS DE VERIFICACIÓN**:
+```bash
+# Verificar redirección individual
+curl -I -L "https://truckerdashcams.com/url-origen"
+
+# Verificar lote completo
+for url in "${URLS[@]}"; do
+    echo "Testing: $url"
+    curl -s -o /dev/null -w "%{http_code}" "$url"
+done
+```
+
+**SALIDA ESPERADA**:
+- Reporte CSV con URLs y códigos de estado
+- Dashboard visual de implementación
+- Alertas para redirecciones fallidas
+- Métricas de performance post-implementación
+```
+
+## **🚀 PROMPT DE IMPLEMENTACIÓN RÁPIDA**
+
+```markdown
+# **IMPLEMENTACIÓN EXPRESS - REDIRECCIONES 301**
+
+**COMANDOS DIRECTOS PARA EJECUTAR**:
+
+1. **BACKUP ACTUAL**:
+```bash
+cp .htaccess .htaccess.backup.$(date +%Y%m%d_%H%M%S)
+```
+
+2. **AGREGAR REDIRECCIONES**:
+```bash
+cat >> .htaccess << 'EOF'
+
+# =============================================================================
+# REDIRECCIONES 301 - RECUPERACIÓN SEO (Implementado: $(date))
+# =============================================================================
+
+# BLOGS JAPONESES - COCOLOG-NIFTY.COM (DA 90+)
+Redirect 301 /cakesuki/2016/03/post-1582.html /truck-storage-solutions/
+Redirect 301 /top/2008/04/post_4ce2.html /truck-maintenance-guides/
+Redirect 301 /cakesuki/2016/02/f-51c2.html /spanish-trucking-resources/
+
+# FOROS POLACOS - HOME.PL (DA 93+)  
+Redirect 301 /topic/984194-camping-gear/ /best-truck-storage-solutions/
+Redirect 301 /topic/934517-kptv-news/ /trucking-news-updates/
+Redirect 301 /topic/1084317-vida-content/ /recursos-en-espanol/
+
+# PLATAFORMAS TÉCNICAS - OVH.NET (DA 92+)
+Redirect 301 /index.php?option=com_booklibrary&task=view&id=222 /trucker-education-resources/
+
+EOF
+```
+
+3. **VERIFICAR SINTAXIS**:
+```bash
+apache2ctl -t
+```
+
+4. **TESTEAR REDIRECCIONES**:
+```bash
+./verify_redirects.sh
+```
+
+**RESPUESTA ESPERADA**: Confirmación de implementación exitosa con reporte de estado de cada redirección.
+```
+
+## **🎯 INSTRUCCIÓN FINAL PARA REPLIT**
+
+```markdown
+**EJECUTA SECUENCIALMENTE**:
+1. Primero: Genera el código .htaccess con todas las redirecciones
+2. Segundo: Crea el script de verificación y monitoreo  
+3. Tercero: Implementa el sistema de backup/rollback
+4. Cuarto: Genera la documentación completa
+5. Quinto: Ejecuta la verificación post-implementación
+
+**CONFIRMACIÓN FINAL**: Proporciona un resumen ejecutivo con:
+- Número de redirecciones implementadas
+- Estado de cada redirección (éxito/falla)
+- Próximos pasos recomendados
+- Métricas de monitoreo establecidas
+```

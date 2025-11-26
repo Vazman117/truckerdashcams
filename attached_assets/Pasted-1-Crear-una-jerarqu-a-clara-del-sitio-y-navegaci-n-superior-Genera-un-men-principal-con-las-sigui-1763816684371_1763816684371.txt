@@ -1,0 +1,149 @@
+1. Crear una jerarquía clara del sitio y navegación superior
+
+Genera un menú principal con las siguientes secciones:
+
+Inicio
+
+Guía de compra
+
+Reseñas
+
+Blog
+
+Casos reales
+
+Preguntas frecuentes
+
+Contacto
+
+Cada página importante debe estar a un máximo de dos clics desde el inicio.
+
+2. Sidebar estratégico para afiliados
+
+En TODAS las páginas de Blog, Guía de compra y Reseñas, incluir un sidebar con:
+
+Lista de productos recomendados.
+
+Imagen + nombre + calificación + botón CTA “Ver en Amazon”.
+
+Enlaces con parámetros de afiliado (placeholder para agregar después).
+
+3. Estructura de páginas para monetización por afiliados
+Para cada reseña individual de dashcam, generar plantillas con:
+
+H1 con keyword long-tail.
+
+Imagen del producto.
+
+Pros y contras.
+
+Especificaciones técnicas.
+
+Comparativa entre modelos similares.
+
+CTA destacado: "Ver precio en Amazon".
+
+Preguntas frecuentes del modelo.
+
+Para las guías, incluir:
+
+Enlace a productos afiliados relevantes:
+
+Dashcams
+
+Tarjetas SD
+
+Accesorios
+
+Soportes
+
+Tablas comparativas.
+
+Título optimizado SEO con keywords como:
+
+best dash cams for truckers 2025
+
+best dash cam with night vision for semi trucks
+
+dual dash cam for commercial vehicles review
+
+4. SEO on-page obligatorio
+
+Implementar:
+
+URLs limpias y SEO-friendly, por ejemplo:
+/best-dashcam-for-truckers
+/garmin-67w-review
+/how-a-dashcam-saved-my-insurance-claim
+
+Encabezados claros (H1, H2, H3).
+
+Meta description generada automáticamente.
+
+Texto ALT en todas las imágenes.
+
+Keywords long-tail integradas de forma natural.
+
+5. Transparencia y confianza
+
+Generar estas páginas:
+
+Política de privacidad
+
+Disclosure de Afiliados (mencionando Amazon Associates)
+
+Acerca de / Sobre nosotros con enfoque en experiencia y credibilidad en la industria del transporte.
+
+Incluir espacio para testimonios reales o recopilados.
+
+6. Llamadas a la acción
+
+En reseñas y guías:
+
+Botón CTA visible arriba y abajo.
+
+Enlaces contextuales dentro del texto hacia productos afiliados.
+
+Tarjetas de “Top Picks” dentro del blog.
+
+7. Arquitectura técnica
+
+Generar:
+
+Archivos HTML/CSS base.
+
+Estructura de carpetas:
+
+/pages  
+   /reviews  
+   /blog  
+   /guides  
+   /cases  
+   /faq  
+   /legal  
+/components  
+   navbar  
+   footer  
+   sidebar  
+   product-card  
+/assets  
+   /images  
+
+
+Componentes reutilizables (Navbar, Footer, Sidebar, ProductCard).
+
+8. Generar contenido “placeholder” con SEO
+
+Crear textos mínimos optimizados usando keywords:
+
+best trucker dash cam 2025
+
+dash cam for semi truck with GPS
+
+dual dash cam night vision for truckers
+
+commercial vehicle dash cam review
+
+why truckers need a dash cam
+
+dash cam insurance claim stories
